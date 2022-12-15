@@ -1,0 +1,41 @@
+body {
+  background-color: #FFFFFF;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0 18px 0 18px;
+}
+.header {
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.nav {
+  font-weight: 700;
+}
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.introduction {
+  background-image: url(../../img/back-mobile.jpg.jpg);
+  background-repeat: no-repeat;
+}
+.map {
+  background-image: url(../../img/map-mobile.jpg.png);
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 350px;
+}
+/*# sourceMappingURL=style.css.map */
