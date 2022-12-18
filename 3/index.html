@@ -14,22 +14,22 @@
             <a class="header__logo logo">
                 <img class="header__logo-image" src="img/logo.svg" width="185px" height="96px" alt="Седона.">
             </a>
-            <button class="nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
             <nav class="header__nav nav">
+              <button class="nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
                 <ul class="nav__list site-list">
                     <li class="site-list__item site-list__item--active">
-                        <a>Главная</a>
+                        <a class="site-list__link">Главная</a>
                     </li>
                     <li class="site-list__item">
-                          <a href="#">Фото и видео</a>
+                          <a class="site-list__link" href="#">Фото и видео</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Форма отзыва</a>
+                        <a class="site-list__link" href="#">Форма отзыва</a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">Html academy</a>
+                        <a class="site-list__link" href="#">Html academy</a>
                     </li>
                 </ul>
             </nav>
@@ -47,15 +47,17 @@
     <!-- advantages -->
             <section class="main-container__advantages advantages">
                 <h2 class="visually-hidden">Преимущества</h2>
-                <div class="advantages-title">
-                    <p class="main-container__title little-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+                <div class="main-container-title">
+                    <p class="main-container__title little-title">Седона — небольшой<br> городок в Аризоне, заслуживающий большего!</p>
                     <p class="main-container__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
                 </div>
                 <div class="advantages__wrapper">
                     <div class="advantages__container">
+                      <div class="advantages__content">
                         <h3 class="advantages__title little-title little-title--light">Настоящий городок</h3>
-                        <span class="advantages__number description">№1</span>
-                        <p class="advantages__description description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                        <span class="advantages__number description description--light">№1</span>
+                        <p class="advantages__description description description--light">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                      </div>
                         <img class="advantages__image" src="img/city.jpg" alt="Фотография настоящего города.">
                     </div>
                     <div class="advantages__container">
@@ -75,9 +77,11 @@
                         </ul>
                     </div>
                     <div class="advantages__container">
-                        <h3 class="advantages__title little-title">Там есть мост дьявола</h3>
-                        <span class="advantages__number description">№2</span>
-                        <p class="advantages__description description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                      <div class="advantages__content">
+                        <h3 class="advantages__title little-title little-title--light">Там есть мост дьявола</h3>
+                        <span class="advantages__number description description--light">№2</span>
+                        <p class="advantages__description description description--light">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                      </div>
                         <img class="advantages__image" src="img/bridge.jpg" alt="Фотография большого каньона.">
                     </div>
                     <div class="advantages__container">
@@ -85,17 +89,17 @@
                             <li class="advantages__item">
                                 <h3 class="advantages__title little-title">Небольшая площадь</h3>
                                 <span class="advantages__number description">№3</span>
-                                <p class="advantages__description description">Все интересные места находятся очень близко</p>
+                                <p class="advantages__description description">Все интересные места находятся<br> очень близко</p>
                             </li>
                             <li class="advantages__item">
                                 <h3 class="advantages__title little-title">Красивая дорога</h3>
                                 <span class="advantages__number description">№4</span>
-                                <p class="advantages__description description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                                <p class="advantages__description description">Ехать в седону из Лас-Вегаса<br> совсем не скучно!</p>
                             </li>
                             <li class="advantages__item">
                                 <h3 class="advantages__title little-title">Мало туристов</h3>
-                                <span class="advantages__description description">№5</span>
-                                <p class="advantages__description description">Большинство едет в гранд каньон и толпится там</p>
+                                <span class="advantages__number description">№5</span>
+                                <p class="advantages__description description">Большинство едет в гранд каньон<br> и толпится там</p>
                             </li>
                         </ul>
                     </div>
@@ -106,7 +110,7 @@
             <section class="offer">
                 <h2 class="offer__title big-title">Заинтересовались?</h2>
                 <p class="offer__description description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="description__button big-title button">Найти гостиницу</button>
+                <button class="description__button big-title button big-title--light">Найти гостиницу</button>
             </section>
 
     <!-- map -->
@@ -123,19 +127,31 @@
             <div class="footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link--vk button little-button" href="#"></a>
+                        <a class="social__link--vk button little-button" href="#">
+                          <img width="24px" height="24px" src="img/vk.svg">
+                        </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link--telegram button little-button" href="#"></a>
+                      <a class="social__link--telegram button little-button" href="#">
+                        <img width="24px" height="24px" src="img/telegram.svg">
+                      </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link--youtube button little-button" href="#"></a>
+                      <a class="social__link--youtube button little-button" href="#">
+                        <img width="24px" height="24px" src="img/youtube.svg">
+                      </a>
                     </li>
                 </ul>
             </div>
             <div class="footer__copyright copyright">
-                <a class="copyright__link" href="#">Разработано</a>
-                <img src="img/logo-htmlacademy.png" alt="Логотип разработчика сайта.">
+              <ul class="coryright-list">
+                <li>
+                  <a class="copyright__link description" href="#">Разработано</a>
+                </li>
+                <li>
+                  <img src="img/logo-htmlacademy.png" width="27px" height="35px" alt="Логотип разработчика сайта.">
+                </li>
+              </ul>
             </div>
         </footer>
     </body>
