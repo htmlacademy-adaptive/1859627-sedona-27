@@ -88,7 +88,7 @@
   margin: 0;
 }
 .description {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -110,8 +110,8 @@
   color: #FFFFFF;
 }
 body {
-  background-color: #FFFFFF;
-  font-family: 'PT Sans', sans-serif;
+  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -135,7 +135,7 @@ body {
   display: none;
 }
 .nav__toggle {
-  background-image: url(../img/icon-menu.svg);
+  background-image: url("../img/icon-menu.svg");
   width: 23px;
   height: 22px;
   border: none;
@@ -150,7 +150,7 @@ body {
   background-color: #81B3D2;
 }
 .site-list__link {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 144%;
@@ -159,7 +159,7 @@ body {
   text-decoration: none;
 }
 .introduction {
-  background-image: url(../img/welcome.jpg);
+  background-image: url("../img/welcome.jpg");
   background-repeat: no-repeat;
   background-color: #dae8f1;
   min-height: 299px;
@@ -180,12 +180,12 @@ body {
   margin-bottom: 32px;
 }
 .button {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   padding: 16px 49px;
   border: none;
 }
 .map {
-  background-image: url(../img/map-mobile.png);
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   width: 320px;
   height: 350px;
