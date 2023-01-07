@@ -23,6 +23,10 @@
 .advantages__wrapper {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    display: grid;
+  }
 }
 
 .advantages__list {
@@ -63,17 +67,5 @@
   @media (min-width: @tablet-width), (min-width: @desktop-width) {
     width: 190px;
     min-height: 152px;
-  }
-}
-
-.advantages__wrapper {
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
-    display: grid;
-  }
-}
-
-.advantages__image {
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
-
   }
 }
