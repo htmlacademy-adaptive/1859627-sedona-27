@@ -1,12 +1,37 @@
 .footer {
   padding: 29px 18px 23px;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    display: flex;
+    min-height: 120px;
+    padding: 0;
+  }
 }
 
 .footer__hashtag {
   margin-bottom: 33px;
   text-align: center;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    padding: 49px 0 45px 45px;
+    margin-right: 97px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__social {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding: 36px 0;
+    margin-right: 100px;
+  }
+}
+
+.footer__copyright {
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding: 43px 76px 43px 0;
+  }
 }

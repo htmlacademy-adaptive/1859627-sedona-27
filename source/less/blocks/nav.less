@@ -4,6 +4,22 @@
 
 .nav__list {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: @desktop-width;
+  }
+
+  @media (min-width: @tablet-width) {
+    .site-list__item:nth-child(3) {
+      margin-left: 153px;
+    }
+  }
 }
 
 .nav__toggle {
@@ -11,4 +27,8 @@
   width: 23px;
   height: 22px;
   border: none;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    display: none;
+  }
 }
