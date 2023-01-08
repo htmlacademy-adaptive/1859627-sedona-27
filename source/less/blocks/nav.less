@@ -1,5 +1,5 @@
 .nav {
-  font-weight: 700;
+  font-weight: @weight-bold;
 }
 
 .nav__list {
@@ -8,16 +8,17 @@
   @media (min-width: @tablet-width) {
     display: flex;
     width: @tablet-width;
+    min-height: 56px;
+    text-align: center;
+
+    .site-list__item:nth-child(3) {
+      margin-left: 153px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    width: @desktop-width;
-  }
-
-  @media (min-width: @tablet-width) {
     .site-list__item:nth-child(3) {
-      margin-left: 153px;
+      margin-left: 240px;
     }
   }
 }
@@ -27,8 +28,11 @@
   width: 23px;
   height: 22px;
   border: none;
+  position: absolute;
+  right: 20px;
+  top: 17px;
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }

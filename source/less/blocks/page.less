@@ -1,13 +1,19 @@
-body {
+.page__body {
+  width: 320px;
   background-color: #ffffff;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  font-family: @base-font;
+  font-weight: @weight-normal;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px rgba(0, 146, 146, 0.2);
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
 
   @media (min-width: @desktop-width) {
-    margin: @desktop-margin;
+    width: @desktop-width;
   }
 }
