@@ -24,8 +24,18 @@
   right: 20px;
   top: 17px;
   z-index: 1;
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.nav--active .nav__list {
+  display: block;
+}
+
+.nav--active .nav__toggle {
+  background-image: url("../img/icon-menu-closed.svg");
+  background-color: transparent;
 }
