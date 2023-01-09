@@ -1,9 +1,26 @@
 .introduction {
-  background-image: url("../img/welcome.jpg");
+  background-image: url("../img/welcome-mobile.jpg");
   background-repeat: no-repeat;
   background-color: rgb(218, 232, 241);
   min-height: 299px;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-top: 90px;
+  padding: 90px 19px 85px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-image: url("../img/welcome-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+    background-image: url("../img/welcome-desktop.jpg");
+  }
+}
+
+.introduction__text-image {
+  @media (min-width: @tablet-width) {
+    margin: auto;
+    width: 461px;
+    height: 350px;
+    background-image: url("../img/text-index-tablet.svg");
+  }
 }

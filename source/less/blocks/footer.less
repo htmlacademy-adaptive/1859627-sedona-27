@@ -1,12 +1,51 @@
 .footer {
   padding: 29px 18px 23px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 120px;
+    padding: 0;
+    gap: 98px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    min-height: 120px;
+    padding: 0;
+    gap: 255px;
+  }
 }
 
 .footer__hashtag {
   margin-bottom: 33px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 49px 0 45px 45px;
+    margin-bottom: 0;
+    width: 100%;
+  }
 }
 
 .footer__social {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 36px 0;
+    width: 100%;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding: 43px 76px 43px 0;
+    width: 100%;
+  }
 }

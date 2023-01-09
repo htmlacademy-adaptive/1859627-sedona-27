@@ -1,9 +1,18 @@
 .nav {
-  font-weight: 700;
+  font-weight: @weight-bold;
 }
 
 .nav__list {
-  display: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: @tablet-width;
+    min-height: 56px;
+    text-align: center;
+
+    .site-list__item:nth-child(3) {
+      margin-left: 153px;
+    }
+  }
 }
 
 .nav__toggle {
@@ -11,4 +20,22 @@
   width: 23px;
   height: 22px;
   border: none;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  z-index: 1;
+  background-color: transparent;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.nav--active .nav__list {
+  display: block;
+}
+
+.nav--active .nav__toggle {
+  background-image: url("../img/icon-menu-closed.svg");
+  background-color: transparent;
 }
