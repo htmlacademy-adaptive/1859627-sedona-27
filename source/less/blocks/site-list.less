@@ -6,6 +6,10 @@
   top: 0;
   width: 100%;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -17,11 +21,19 @@
     min-width: 153px;
     background-color: @white-color;
     box-shadow: none;
+
+    &--active .site-list__link {
+      color: @active-color;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 240px;
     background-color: @white-color;
+
+    &--active .site-list__link {
+      color: @active-color;
+    }
   }
 
   @media (min-width: @desktop-width) {
