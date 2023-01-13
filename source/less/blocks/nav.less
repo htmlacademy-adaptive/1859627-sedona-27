@@ -6,6 +6,10 @@
 
   &--closed .nav__list {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
   }
 
   &--closed .nav__toggle {
@@ -18,11 +22,19 @@
 
   &--opened .nav__list {
     display: block;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
   }
 
   &--opened .nav__toggle {
     background-image: url("../img/icon-menu-closed.svg");
     display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &--nojs .nav__toggle {
