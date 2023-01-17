@@ -1,14 +1,15 @@
 .header {
   margin: 0;
   position: relative;
-  min-height: 56px;
+  height: 56px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 56px;
+  }
 }
 
 .header__logo {
   padding-right: 67px;
   padding-left: 67px;
-}
-
-.header__logo-image {
   position: absolute;
 }
