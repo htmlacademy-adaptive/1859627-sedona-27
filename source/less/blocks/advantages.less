@@ -28,10 +28,16 @@
 .advantages__content {
   background-color: @main-color;
   color: @white-color;
-  padding: 33px 18px 40px;
+  padding: 54px 18px 40px;
+
+  &--clip {
+    background-image: url("../img/clip.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
     width: 256px;
+    background-image: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -68,6 +74,7 @@
 .advantages__wrapper {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
