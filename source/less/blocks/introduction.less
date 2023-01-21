@@ -3,17 +3,33 @@
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-color: rgb(218, 232, 241);
+  background-size: contain;
   min-height: 299px;
   padding: 90px 19px 85px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-clip-mobile.svg"), url("../img/welcome-mobile@2x.jpg");
+    background-size: @mobile-width auto;
+  }
 
   @media (min-width: @tablet-width) {
     height: 518px;
     background-image: url("../img/intro-clip-tablet.svg"), url("../img/welcome-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-clip-tablet.svg"), url("../img/welcome-tablet@2x.jpg");
+      background-size: @tablet-width auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 518px;
     background-image: url("../img/intro-clip-desktop.svg"), url("../img/welcome-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-clip-desktop.svg"), url("../img/welcome-desktop@2x.jpg");
+      background-size: @desktop-width auto;
+    }
   }
 }
 
