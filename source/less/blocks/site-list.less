@@ -17,6 +17,10 @@
   background-color: @main-color;
   box-shadow: 0 1px 0 @black-opacity-color, inset 0 1px 0 @white-opacity-color;
 
+  &--active .site-list__link:hover {
+    color: red;
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 153px;
     background-color: @white-color;
@@ -51,6 +55,10 @@
   color: @white-color;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover .site-list__item--active {
+    color: #888888;
+  }
 
   &:hover {
     color: @main-color;
