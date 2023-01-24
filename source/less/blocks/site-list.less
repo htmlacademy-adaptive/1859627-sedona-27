@@ -17,8 +17,15 @@
   background-color: @main-color;
   box-shadow: 0 1px 0 @black-opacity-color, inset 0 1px 0 @white-opacity-color;
 
-  &--active .site-list__link:hover {
-    color: red;
+  @media (min-width: @tablet-width) {
+    &--active .site-list__link:hover {
+      color: @active-color;
+    }
+
+    &--active .site-list__link:active {
+      color: @active-color;
+      opacity: 1;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -56,17 +63,15 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover .site-list__item--active {
-    color: #888888;
-  }
+  @media (min-width: @tablet-width) {
+    &:hover {
+      color: @main-color;
+    }
 
-  &:hover {
-    color: @main-color;
-  }
-
-  &:active {
-    color: @black-color;
-    opacity: 0.3;
+    &:active {
+      color: @black-color;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: @tablet-width) {

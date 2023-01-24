@@ -14,7 +14,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding: 156px 33px 0;
+    padding: 0 33px;
   }
 }
 
@@ -25,23 +25,53 @@
     background-image: url("../img/icon-house-mobile.svg");
     background-repeat: no-repeat;
     background-position: 18px top;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-house-tablet.svg");
+      background-position: 58px 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/icon-house-desktop.svg");
+      background-position: 130px 59px;
+    }
   }
 
   &--food {
     background-image: url("../img/icon-food-mobile.svg");
     background-repeat: no-repeat;
     background-position: 18px top;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-food-tablet.svg");
+      background-position: 58px 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/icon-food-desktop.svg");
+      background-position: 138px 59px;
+    }
   }
 
   &--souvenirs {
     background-image: url("../img/icon-souvenirs-mobile.svg");
     background-repeat: no-repeat;
     background-position: 18px top;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-souvenirs-tablet.svg");
+      background-position: 58px 59px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../img/icon-souvenirs-desktop.svg");
+      background-position: 112px 59px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding: 0;
+    padding: 156px 0 0 0;
     text-align: center;
   }
 }
