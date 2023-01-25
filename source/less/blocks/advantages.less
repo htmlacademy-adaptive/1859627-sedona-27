@@ -9,6 +9,11 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 54px;
+  }
 }
 
 .advantages__header-description {
@@ -21,23 +26,42 @@
 .advantages__header-title {
   padding-left: 12px;
   padding-right: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
+  margin-top: 1px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 124%;
+    margin-bottom: 29px;
+  }
+}
+
+.advantages__container--reverse .advantages__content {
+  padding-top: 38px;
+  padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+  }
 }
 
 .advantages__content {
   background-color: @main-color;
   color: @white-color;
-  padding: 54px 18px 40px;
+  padding: 50px 18px 40px;
 
   &--clip {
     background-image: url("../img/clip.svg");
     background-repeat: no-repeat;
+    background-position-y: -20px;
   }
 
   @media (min-width: @tablet-width) {
     width: 256px;
     background-image: none;
+    padding-top: 55px;
+    padding-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,12 +87,30 @@
   margin-top: 0;
   margin-bottom: 11px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 124%;
+    margin-bottom: 12px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .advantages__number {
   margin-bottom: 17px;
   display: block;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__wrapper {
@@ -96,8 +138,9 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    line-height: 124%;
     width: 768px;
-    padding: 52px 33px;
+    padding: 42px 33px 32px;
     gap: 66px;
   }
 
@@ -132,6 +175,10 @@
   @media (min-width: @tablet-width) {
     width: 190px;
     min-height: 152px;
+
+    &:nth-child(odd) {
+      padding-top: 11px;
+    }
   }
 
   @media (min-width: @desktop-width) {
