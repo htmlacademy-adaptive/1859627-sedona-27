@@ -1,71 +1,91 @@
 .benefits__title {
   margin-top: 0;
   margin-bottom: 16px;
+
+  & br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__list {
   list-style: none;
-  margin: 0 auto 48px;
-  padding: 22px 0 0;
+  margin: 0 auto 45px;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 66px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    padding: 0 33px;
+    padding: 0 18px;
+    gap: 33px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 99px;
+    padding: 0 50px;
+    margin-bottom: 72px;
   }
 }
 
 .benefits__item {
-  padding: 0 18px 0 65px;
+  padding: 33px 18px 0 65px;
 
   &--housing {
     background-image: url("../img/icon-house-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 18px top;
+    background-position: 18px 23px;
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/icon-house-tablet.svg");
-      background-position: 58px 59px;
+      background-position: 70px 60px;
     }
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/icon-house-desktop.svg");
-      background-position: 130px 59px;
+      background-position: 109px 69px;
     }
   }
 
   &--food {
     background-image: url("../img/icon-food-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 18px top;
+    background-position: 18px 23px;
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/icon-food-tablet.svg");
-      background-position: 58px 59px;
+      background-position: 69px 62px;
     }
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/icon-food-desktop.svg");
-      background-position: 138px 59px;
+      background-position: 111px 72px;
     }
   }
 
   &--souvenirs {
     background-image: url("../img/icon-souvenirs-mobile.svg");
     background-repeat: no-repeat;
-    background-position: 18px top;
+    background-position: 18px 24px;
 
     @media (min-width: @tablet-width) {
       background-image: url("../img/icon-souvenirs-tablet.svg");
-      background-position: 58px 59px;
+      background-position: 81px 64px;
     }
 
     @media (min-width: @desktop-width) {
       background-image: url("../img/icon-souvenirs-desktop.svg");
-      background-position: 112px 59px;
+      background-position: 110px 69px;
     }
   }
 
@@ -73,9 +93,36 @@
     flex-direction: row;
     padding: 156px 0 0 0;
     text-align: center;
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 166px 0 0 0;
+    width: 400px;
   }
 }
 
 .benefits__description {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 180px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 300px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 }
