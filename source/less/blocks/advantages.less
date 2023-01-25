@@ -14,6 +14,11 @@
     margin-top: 48px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 43px;
+  }
 }
 
 .advantages__header-description {
@@ -34,6 +39,7 @@
     font-size: 21px;
     line-height: 124%;
     margin-bottom: 29px;
+    max-width: 500px;
   }
 }
 
@@ -92,6 +98,9 @@
     font-size: 21px;
     line-height: 124%;
     margin-bottom: 12px;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   & br {
@@ -140,21 +149,40 @@
     flex-direction: row;
     line-height: 124%;
     width: 768px;
-    padding: 42px 33px 32px;
+    padding: 42px 33px 42px 32px;
     gap: 66px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     width: 1200px;
-    padding: 63px 50px 41px;
+    padding: 54px 50px 41px;
     gap: 100px;
   }
 }
 
+
 .advantages__description {
   margin: 0;
   text-align: center;
+
+  & br {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 190px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 290px;
+    margin: auto;
+  }
 }
 
 .advantages__container {
@@ -172,6 +200,45 @@
 }
 
 .advantages__item {
+  &--square .advantages__description {
+    max-width: 240px;
+    margin: auto;
+
+    @media (min-width: @tablet-width) {
+      max-width: 180px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 290px;
+    }
+  }
+
+  &--turists .advantages__description {
+    max-width: 250px;
+    margin: auto;
+
+    @media (min-width: @tablet-width) {
+      max-width: 190px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 275px;
+    }
+  }
+
+  &--road .advantages__description {
+    max-width: 240px;
+    margin: auto;
+
+    @media (min-width: @tablet-width) {
+      max-width: 180px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 275px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     width: 190px;
     min-height: 152px;
