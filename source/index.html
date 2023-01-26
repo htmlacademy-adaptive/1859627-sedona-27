@@ -35,7 +35,7 @@
     <!-- header -->
         <header class="header">
             <a class="header__logo logo" href="#">
-                <img class="logo__image" src="img/logo.svg" width="185px" height="96px" alt="Седона.">
+                <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Седона.">
             </a>
             <!--Для отображения мобильного меню необходимо применить класс nav--active к тегу nav-->
             <nav class="header__nav nav nav--opened nav--nojs">
@@ -64,7 +64,7 @@
             <section class="introduction-wrapper">
                 <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
                 <div class="introduction">
-                    <img class="introduction__text-image" src="img/text-index.svg" width="282px" height="214px" alt="Приветственная надпись.">
+                    <img class="introduction__text-image" src="img/text-index.svg" width="282" height="214" alt="Приветственная надпись.">
                 </div>
             </section>
 
@@ -88,9 +88,9 @@
                         <source media="(min-width: 768px)" srcset="img/city-tablet.webp 1x, img/city-tablet@2x.webp 2x">
                         <source media="(min-width: 1200px)" srcset="img/city-desktop.jpg 1x, img/city-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/city-tablet.jpg 1x, img/city-tablet@2x.jpg 2x">
-                        <img class="advantages__image" width="320px" height="260px" src="img/city.jpg" srcset="img/city@2x.jpg 2x" alt="Фотография настоящего города.">
+                        <img class="advantages__image" width="320" height="260" src="img/city.jpg" srcset="img/city@2x.jpg 2x" alt="Фотография настоящего города.">
                       </picture>
-                      <ul class="benefits__list">
+                      <ul class="benefits">
                         <li class="benefits__item benefits__item--housing">
                             <h3 class="benefits__title card-title">Жилье</h3>
                             <p class="benefits__description description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -117,7 +117,7 @@
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
                           <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                           <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
-                          <img class="advantages__image" width="320px" height="260px" src="img/bridge.jpg" srcset="img/bridge@2x.jpg 2x" alt="Фотография большого каньона.">
+                          <img class="advantages__image" width="320" height="260" src="img/bridge.jpg" srcset="img/bridge@2x.jpg 2x" alt="Фотография большого каньона.">
                         </picture>
                     </li>
                     <li class="advantages__container">
@@ -146,13 +146,13 @@
             <section class="offer">
                 <h2 class="offer__title content-title">Заинтересовались?</h2>
                 <p class="offer__description description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <button class="description__button content-title content-title--light">Найти гостиницу</button>
+                <a class="offer__button content-title content-title--light" href="#">Найти гостиницу</a>
             </section>
 
     <!-- map -->
             <section class="map">
               <h2 class="visually-hidden">Как до нас добраться</h2>
-              <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31144.761529937758!2d-111.80669515042592!3d34.864021164363166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673875807319!5m2!1sru!2sru" width="320px" height="350px" allowfullscreen="" title="Местонахождение Седоны"></iframe>
+              <iframe class="map__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31144.761529937758!2d-111.80669515042592!3d34.864021164363166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673875807319!5m2!1sru!2sru" width="320" height="350" allowfullscreen="" title="Местонахождение Седоны"></iframe>
             </section>
         </main>
 
@@ -164,21 +164,21 @@
             <div class="footer__social social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link social__link--vk" href="#">
-                          <svg width="24px" height="24px">
+                        <a class="social__link social__link--vk" href="#" aria-label="Вконтакте.">
+                          <svg width="24" height="24">
                             <use href="#vk"></use>
                           </svg>
                         </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--telegram" href="#">
+                      <a class="social__link social__link--telegram" href="#" aria-label="Телеграм.">
                         <svg width="24" height="24">
                           <use href="#telegram"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link social__link--youtube" href="#">
+                      <a class="social__link social__link--youtube" href="#" aria-label="Ютуб.">
                         <svg width="24" height="24">
                           <use href="#youtube"></use>
                         </svg>
