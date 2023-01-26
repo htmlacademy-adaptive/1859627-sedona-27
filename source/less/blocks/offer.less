@@ -44,3 +44,29 @@
     margin-bottom: 47px;
   }
 }
+
+.offer__button {
+  background-color: @main-color;
+  padding: 16px 49px 11px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+
+  &:hover {
+    background-color: @blue-color;
+  }
+
+  &:active {
+    background-color: @dark-blue;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @light-gray;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+}
